@@ -1,0 +1,37 @@
+.picture {
+    position: relative;
+    background: url(./assets/img/hero-2-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    height: 550px;
+    z-index: 0;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: -webkit-linear-gradient(top, rgba(0,0,0,0.0), rgba(0,0,0,0.70));
+        z-index: 1;
+    }
+
+    &__inner {
+        height: 450px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+
+    &__title {
+        position: relative;
+        max-width: 860px;
+        @extend %tilda-600;
+        font-size: 46px;
+        line-height: 1.23;
+        color: var(--white-color);
+        z-index: 2;
+    }
+}

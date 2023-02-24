@@ -1,0 +1,62 @@
+.form {
+    background: url(./assets/img/form-bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    background-attachment: fixed;
+
+    &__inner {
+    }
+
+    &__box {
+        max-width: 560px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__input {
+        background-color: var(--white-color);
+        border-radius: 30px;
+        padding: 20px;
+        border: none;
+        outline: none;
+        @extend %tilda-300;
+        font-size: 18px;
+    }
+
+    &__input::placeholder {
+        opacity: 0.5;
+    }
+
+    &__input-text {
+    }
+
+    &__input-phone {
+    }
+
+    &__btn {
+        padding: 20px;
+        background-color: var(--accent-color);
+        color: var(--white-color);
+        font-size: 16px;
+        text-align: center;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    &__textarea {
+        min-width: 560px;
+        max-width: 560px;
+    }
+
+    &__policy {
+        @extend %tilda-300;
+        font-size: 15px;
+        line-height: 1.5;
+        margin-top: 30px;
+        text-align: center;
+    }
+}

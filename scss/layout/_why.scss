@@ -1,0 +1,22 @@
+.why {
+    background-color: var(--bg-color-grey);
+
+    &__inner {
+    }
+
+    &__title {
+    }
+
+    &__list {
+        max-width: 460px;
+        margin: 0 auto;
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__item {
+        font-size: 18px;
+        line-height: 1.5;
+        @extend %tilda-300;
+    }
+}

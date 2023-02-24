@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    font-style: normal;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.text {
+    @extend %tilda-300;
+    font-size: 20px;
+    margin-bottom: 35px;
+    line-height: 1.5;
+}
+
+.section {
+    padding: 40px 0;
+}
+
+.section-title {
+    font-size: 42px;
+    line-height: 1.23;
+    @extend %tilda-600;
+    text-align: center;
+    margin-bottom: 40px;
+}
