@@ -35,3 +35,9 @@
         z-index: 2;
     }
 }
+
+@media screen and (max-width: 576px) {
+    .picture__title {
+        font-size: 40px;
+    }
+}

@@ -1,18 +1,12 @@
 .trust {
 
-    &__inner {
-    }
-
-    &__title {
-    }
-
-    &__text {
+    &__text-box {
         max-width: 560px;
         margin: 0 auto;
         margin-bottom: 20px;
     }
 
-    &__text-span {
+    &__text-h4 {
         @extend %tilda-300;
         font-size: 22px;
         line-height: 1.5;
@@ -26,10 +20,6 @@
         gap: 30px;
     }
 
-    &__card {
-        
-    }
-
     &__card-video {
         width: 100%;
     }
@@ -39,5 +29,11 @@
         font-size: 18px;
         line-height: 1.35;
         margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .trust__text-h4 {
+        font-size: 20px;
     }
 }

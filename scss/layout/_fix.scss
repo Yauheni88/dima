@@ -6,9 +6,6 @@
         align-items: center;
     }
 
-    &__title {
-    }
-
     &__text {
         max-width: 540px;
         text-align: center;
@@ -52,6 +49,21 @@
         margin-bottom: 90px;
         &:last-child {
             margin-bottom: 45px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .fix__image {
+        margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .fix__image {
+        margin-bottom: 40px;
+        &:last-child {
+            margin-bottom: 40px;
         }
     }
 }

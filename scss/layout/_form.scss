@@ -5,9 +5,6 @@
     background-position: 50%;
     background-attachment: fixed;
 
-    &__inner {
-    }
-
     &__box {
         max-width: 560px;
         margin: 0 auto;
@@ -30,12 +27,6 @@
         opacity: 0.5;
     }
 
-    &__input-text {
-    }
-
-    &__input-phone {
-    }
-
     &__btn {
         padding: 20px;
         background-color: var(--accent-color);
@@ -48,8 +39,9 @@
     }
 
     &__textarea {
-        min-width: 560px;
+        width: 100%;
         max-width: 560px;
+        resize: vertical;
     }
 
     &__policy {
@@ -58,5 +50,11 @@
         line-height: 1.5;
         margin-top: 30px;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .form__input {
+        font-size: 16px;
     }
 }
