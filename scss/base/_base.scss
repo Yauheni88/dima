@@ -37,6 +37,11 @@ body {
     text-align: center;
     margin-bottom: 40px;
 }
+
+.hidden {
+    display: none!important;
+}
+
 @media screen and (max-width: 768px) {
 
     .section {
