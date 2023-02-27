@@ -513,6 +513,7 @@ body {
   width: 100%;
 }
 .trust__card-iframe {
+  display: block;
   width: 100%;
   aspect-ratio: 16/9;
 }
