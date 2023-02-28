@@ -227,8 +227,14 @@ body {
 .why__item {
   font-size: 18px;
   line-height: 1.5;
+  margin-bottom: 5px;
 }
 
+@media screen and (max-width: 576px) {
+  .why__list {
+    padding-left: 25px;
+  }
+}
 .fix__inner {
   display: flex;
   flex-direction: column;
