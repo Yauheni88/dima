@@ -29,7 +29,8 @@
         padding: 20px 30px;
         text-align: center;
         color: var(--white-color);
-        font-size: 16px;
+        font-size: 18px;
+        letter-spacing: 1px;
         @extend %tilda-600;
         text-decoration: none;
     }
