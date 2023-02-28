@@ -188,11 +188,21 @@
             <div class="container">
                 <div class="form__inner">
                     <h2 class="form__title section-title">Записаться на консультацию</h2>
-                    <form class="form__box" method="POST">
-                        <input class="form__input-text form__input" type="text" placeholder="Имя">
-                        <input class="form__input-phone form__input" type="tel" name="" id="" placeholder="+375(XX) XXX-XX-XX или +7 (ХХХ) ХХХ-ХХ-ХХ">
-                        <textarea class="form__textarea form__input" name="" id="" cols="30" rows="5" placeholder="По какому мессенджеру с вами связаться?"></textarea>
+                    <form class="form__box" method="post" id="tg1">
+                        <div class="form__wrapper">
+                            <input class="form__input-text form__input" name="name" type="text" id="input-text" required="required">
+                            <label class="form__label" for="input-text">Имя</label>
+                        </div>
+                        <div class="form__wrapper">
+                            <input class="form__input-phone form__input" name="phone" type="tel" id="input-phone" required="required">
+                            <label class="form__label" for="input-phone">+375(XX)XXX-XX-XX</label>
+                        </div>
+                        <div class="form__wrapper">
+                            <textarea class="form__textarea form__input" name="textarea" rows="5" id="form-textarea" required="required"></textarea>
+                            <label class="form__label" for="form-textarea">По какому мессенджеру с вами связаться?</label>
+                        </div>
                         <button class="form__btn" type="submit">Отправить</button>
+                        <p class="form__message1" id="form__message1">Сообщение отправлено!</p>
                     </form>
                     <p class="form__policy">Нажимая на кнопку, вы соглашаетесь c нашей политикой конфиденциальности</p>
                 </div>
@@ -226,19 +236,19 @@
                     </div>
                     <div class="trust__videos">
                         <div class="trust__card">
-                            <img class="trust__card-image" src="./assets/img/youtube1_1.webp" loading="lazy" alt="видео отзыв Оксаны" data-src="https://www.youtube.com/embed/JBsCxtJbh-0?autoplay=1">
+                            <img class="trust__card-image" src="./assets/img/youtube11.webp" loading="lazy" alt="видео отзыв Оксаны" data-src="https://www.youtube.com/embed/JBsCxtJbh-0?autoplay=1">
                             <p class="trust__card-text">Отзыв от Оксаны</p>
                         </div>
                         <div class="trust__card">
-                            <img class="trust__card-image" src="./assets/img/youtube2.webp" loading="lazy" alt="видео отзыв Любови" data-src="https://www.youtube.com/embed/L1HmVEciRjM?autoplay=1">
+                            <img class="trust__card-image" src="./assets/img/youtube22.webp" loading="lazy" alt="видео отзыв Любови" data-src="https://www.youtube.com/embed/L1HmVEciRjM?autoplay=1">
                             <p class="trust__card-text">Отзыв от Любови</p>
                         </div>
                         <div class="trust__card">
-                            <img class="trust__card-image" src="./assets/img/youtube3.webp" loading="lazy" alt="видео отзыв Ольги" data-src="https://www.youtube.com/embed/oOf8yEhurvg?autoplay=1">
+                            <img class="trust__card-image" src="./assets/img/youtube33.webp" loading="lazy" alt="видео отзыв Ольги" data-src="https://www.youtube.com/embed/oOf8yEhurvg?autoplay=1">
                             <p class="trust__card-text">Отзыв от Ольги</p>
                         </div>
                         <div class="trust__card">
-                            <img class="trust__card-image" src="./assets/img/youtube4.webp" loading="lazy" alt="видео отзыв Елены" data-src="https://www.youtube.com/embed/63UXN1AlMbY?autoplay=1">
+                            <img class="trust__card-image" src="./assets/img/youtube44.webp" loading="lazy" alt="видео отзыв Елены" data-src="https://www.youtube.com/embed/63UXN1AlMbY?autoplay=1">
                             <p class="trust__card-text">Отзыв от Елены</p>
                         </div>
                     </div>
@@ -250,11 +260,21 @@
             <div class="container">
                 <div class="form__inner">
                     <h2 class="form__title section-title">Записаться на консультацию</h2>
-                    <form class="form__box" method="POST">
-                        <input class="form__input-text form__input" type="text" placeholder="Имя">
-                        <input class="form__input-phone form__input" type="tel" placeholder="+375(XX) XXX-XX-XX или +7 (ХХХ) ХХХ-ХХ-ХХ">
-                        <textarea class="form__textarea form__input" rows="5" placeholder="По какому мессенджеру с вами связаться?"></textarea>
+                    <form class="form__box" method="post" id="tg2">
+                        <div class="form__wrapper">
+                            <input class="form__input-text form__input" name="name" type="text" id="input-text" required="required">
+                            <label class="form__label" for="input-text">Имя</label>
+                        </div>
+                        <div class="form__wrapper">
+                            <input class="form__input-phone form__input" name="phone" type="tel" id="input-phone" required="required">
+                            <label class="form__label" for="input-phone">+375(XX)XXX-XX-XX</label>
+                        </div>
+                        <div class="form__wrapper">
+                            <textarea class="form__textarea form__input" name="textarea" rows="5" id="form-textarea" required="required"></textarea>
+                            <label class="form__label" for="form-textarea">По какому мессенджеру с вами связаться?</label>
+                        </div>
                         <button class="form__btn" type="submit">Отправить</button>
+                        <p class="form__message2" id="form__message2">Сообщение отправлено!</p>
                     </form>
                     <p class="form__policy">Нажимая на кнопку, вы соглашаетесь c нашей политикой конфиденциальности</p>
                 </div>
@@ -301,7 +321,9 @@
             </div>
         </footer>
     </main>
-    <script src="./assets/js/video.js"></script>
+    <script src="./assets/js/video.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+    <script src="./assets/js/form.js" defer></script>
 </body>
 
 </html>

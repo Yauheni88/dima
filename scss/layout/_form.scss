@@ -13,18 +13,43 @@
         gap: 20px;
     }
 
+    &__wrapper {
+        position: relative;
+        &:valid ~ label,
+        &:focus ~ label {
+            top: 10px;
+        }
+    }
+
     &__input {
+        width: 100%;
         background-color: var(--white-color);
         border-radius: 30px;
-        padding: 20px;
+        padding: 20px 25px 15px;
         border: none;
         outline: none;
         @extend %tilda-300;
         font-size: 18px;
     }
 
-    &__input::placeholder {
+    &__label {
+        position: absolute;
+        top: 17px;
+        left: 25px;
+        transition: .5s;
+        @extend %tilda-300;
+        font-size: 16px;
         opacity: 0.5;
+    }
+
+    &__input {
+        &:valid ~ label,
+        &:focus ~ label {
+            font-size: 13px;
+            top: -3px;
+            left: 15px;
+            padding: 5px 10px;
+        }
     }
 
     &__btn {
@@ -36,6 +61,15 @@
         border: none;
         outline: none;
         cursor: pointer;
+    }
+
+    &__message1,
+    &__message2 {
+        display: none;
+        @extend %tilda-300;
+        font-size: 15px;
+        line-height: 1.5;
+        text-align: center;
     }
 
     &__textarea {
