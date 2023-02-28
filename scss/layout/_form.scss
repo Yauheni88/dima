@@ -67,8 +67,11 @@
     &__message2 {
         display: none;
         @extend %tilda-300;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 1.5;
+        padding: 10px 0;
+        color: var(--white-color);
+        background-color: #28a745cf;
         text-align: center;
     }
 

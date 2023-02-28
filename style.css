@@ -589,8 +589,11 @@ body {
 }
 .form__message1, .form__message2 {
   display: none;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.5;
+  padding: 10px 0;
+  color: var(--white-color);
+  background-color: rgba(40, 167, 69, 0.8117647059);
   text-align: center;
 }
 .form__textarea {
