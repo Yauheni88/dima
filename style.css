@@ -113,7 +113,7 @@ body {
   font-display: swap;
 }
 .header {
-  height: 100vh;
+  min-height: 100vh;
   background-color: var(--bg-footer-color);
   background: url(./assets/img/header-bg.webp) no-repeat;
   background-size: cover;
@@ -139,8 +139,7 @@ body {
   padding: 20px 30px;
   text-align: center;
   color: var(--white-color);
-  font-size: 18px;
-  letter-spacing: 1px;
+  font-size: 16px;
   text-decoration: none;
 }
 .header__hero {
@@ -582,8 +581,7 @@ body {
   padding: 20px;
   background-color: var(--accent-color);
   color: var(--white-color);
-  font-size: 18px;
-  letter-spacing: 1px;
+  font-size: 16px;
   text-align: center;
   border: none;
   outline: none;

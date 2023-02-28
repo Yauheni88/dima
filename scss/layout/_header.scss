@@ -1,5 +1,5 @@
 .header {
-    height: 100vh;
+    min-height: 100vh;
     background-color: var(--bg-footer-color);
     background: url(./assets/img/header-bg.webp) no-repeat;
     background-size: cover;
@@ -29,8 +29,7 @@
         padding: 20px 30px;
         text-align: center;
         color: var(--white-color);
-        font-size: 18px;
-        letter-spacing: 1px;
+        font-size: 16px;
         @extend %tilda-600;
         text-decoration: none;
     }
